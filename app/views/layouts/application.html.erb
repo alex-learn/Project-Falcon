@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Falcon</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
-  <%= csrf_meta_tag %>
+	<title>Project Falcon</title>
+	<%= stylesheet_link_tag :all %>
+	<% content_for :javascript_includes do %>
+	<%= javascript_include_tag "index2_1.js" %>
+	<%= javascript_include_tag "index2_2.js" %>
+	<%= javascript_include_tag "jquery.pageslide.min.js" %>
+	<% end %>
+	<%= csrf_meta_tag %>
 </head>
-<body>
 <%= yield %>
-</body>
 </html>
