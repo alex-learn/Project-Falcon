@@ -38,19 +38,18 @@ var _gaq = _gaq || [];
 	z-index: 999;
 
 	/* Specify the width of your pageslide here */
-	padding: 20px 100px 0 20px;
+	padding: 20px 150px 0 20px;
 
 	/* These styles are optional, and describe how the pageslide will look */
 	background-color: #333;
-	background: #f0f0f0;
+	background: #424242;
 	border-right: 1px solid #ddd;
 }
-#main2 { min-height: 1024px; padding: 1.25em 1.875em; position: relative; background: #fff; }
 #header {left:auto;}
 </style>
 
 <body>
-	<div id="header" style="line-height: 41px;">
+	<div id="header" style="line-height: 39px;">
 		<div id="slide_popup" style="display:none;">
 			<div id="slide-menu">
 				<ul class="slide-menu-tab">
@@ -64,7 +63,7 @@ var _gaq = _gaq || [];
 				</ul>
 			</div>
 		</div>
-		<div class="wrapper clearfix">
+		<div class="wrapper clearfix" style="background-color: #851F27;">
 			<div id="slide_popup"><a href="#slide_popup" class="popout"></a></div>
 
 			<ul id="pf-site-menu">
@@ -72,11 +71,11 @@ var _gaq = _gaq || [];
 			</ul>
 
 			<div id="toggle-buttons">
-				<div id="toggle-blog-menu"><i class="icon-arrowdown"></i></div>
-				<div id="toggle-search"><i class="icon-search"></i></div>
+				<div id="toggle-blog-menu" style="border-left: 1px solid #fff; width: 95px; line-height: 50px;">menu<i class="icon-arrowdown" style="padding-left:10px"></i></div>
+				<div id="toggle-search" style="border-left: 1px solid #fff; width: 50px; line-height: 50px;"><i class="icon-search"></i></div>
 			</div>
 
-			<div id="search-form">
+			<div id="search-form" style="background-color: #851F27;">
 				<form action="/" method="get">
 					<label for="s" class="search-button"><i class="icon-search"></i></label>
 					<input type="text" name="s" class="search-input" placeholder="Coming Soon" />
@@ -86,114 +85,110 @@ var _gaq = _gaq || [];
 			<ul class="blog-menu">
 				<li id="toggle-extra-menu"><i class="icon-info"></i>
 					<ul class="extra-menu">
-						<li><a href="/about/">About</a></li>
-						<li><a href="/contact/">Contact</a></li>
-						<li><a href="/team/">Team</a></li>
-						<li><a href="/goodies/">Goodies</a></li>
-						<li><a href="/advertise/">Advertise</a></li>
+						<li><a href="/about/" style="background-color: #851F27;">Appetizers</a></li>
+						<li><a href="/contact/" style="background-color: #851F27;">Salads</a></li>
+						<li><a href="/team/" style="background-color: #851F27;">Soups</a></li>
+						<li><a href="/goodies/" style="background-color: #851F27;">Seafood</a></li>
+						<li><a href="/advertise/" style="background-color: #851F27;">Burritos</a></li>
+						<li><a href="/about/" style="background-color: #851F27;">Tostadas</a></li>
+						<li><a href="/team/" style="background-color: #851F27;">A La Carte</a></li>
+						<li><a href="/goodies/" style="background-color: #851F27;">Beverages</a></li>
+						<li><a href="/advertise/" style="background-color: #851F27;">Cocktails</a></li>
+						<li><a href="/about/" style="background-color: #851F27;">Desserts</a></li>
+						<li><a href="/contact/" style="background-color: #851F27;">Combinations</a></li>
+						<li><a href="/contact/" style="background-color: #851F27;">House Specials</a></li>
 					</ul>
 				</li>
 			</ul>						
 		</div>
 	</div><!-- #header -->
 
-	<div id="logo-header">
-	</div>
-	<div id="content" class="wrapper clearfix">
-		<div id="stream" style="display:none;">
-			<div class="scrollbar">
-				<div class="track">
-					<div class="scrollthumb">
-						<div class="end"></div>
-					</div>
-				</div>
-			</div>
-		</div>	
-		<div id="main2">
-			<div id="galleryd">
+	<div id="content">
+		<div id="stream" style="display:none;"></div>
 
-				<article class="container">
-					<header> 
-						<ul class="widget-list">
-							<li class="widget-container">
-								<img class="thumb" src="/images/logo.png" ></img>
-								<div class="content-text">
-									<div class="name"><strong>Don Antonio's</strong><br>Serving since 1982...</div>		            
-								</div>
-								<div class="content-text-left-aligned">
-									<hgroup>
-										<p>Welcome friends to the best Mexican food in Los Angeles. You may have a hard time finding the hostess stand, but you can't miss the vibrant atmosphere, good times and great food.</p>
-										<div style="height:20px;"></div>
-										<p>Family owned and operated, Don Antonio's has been serving up authentic Mexican cuisine since 1982.</p>
-									</hgroup>  
-								</div>
-							</li>
-						</ul>
-					</header>
-				</article>
+		<!--##########################################-->
+		<!--ABOUT US WIDGET-->
+		<!--##########################################-->
 
-				<div style="height:20px;"></div>
+		<article class="container">
+			<header> 
+				<ul class="widget-list">
+					<li class="widget-container">
+						<img class="thumb" src="/images/logo.png" ></img>
+						<div class="content-text">
+							<div class="name"><strong>Don Antonio's</strong><br>Serving since 1982...</div>		            
+						</div>
+						<div class="content-text-left-aligned">
+							<hgroup>
+								<p>Welcome friends to the best Mexican food in Los Angeles. You may have a hard time finding the hostess stand, but you can't miss the vibrant atmosphere, good times and great food.</p>
+								<div style="height:20px;"></div>
+								<p>Family owned and operated, Don Antonio's has been serving up authentic Mexican cuisine since 1982.</p>
+							</hgroup>  
+						</div>
+					</li>
+				</ul>
+			</header>
+		</article>
 
-				<!--##########################################-->
-				<!--ADDRESS WIDGET-->
-				<!--##########################################-->
+		<div style="height:20px;"></div>
 
-				<article class="container">
-					<header style="border-bottom:none;"> 
-						<ul class="widget-list">
-							<li class="widget-container">
-								<img class="thumb-map-icon" src="/images/logo.png" ></img>
-								<div class="content-map-text">
-									<div class="name"><strong>11755 West Pico Blvd.</strong><br>Los Angeles, CA 90064</div>		            
-								</div>
-							</li>
-						</ul>
-					</header>
-				</article>
-				<article class="container">
-					<header> 
-						<ul class="widget-list">
-							<li class="widget-container">		
-								<span class="map">
-									<img src="/images/map.png"></img>
-								</span>
-							</li>
-						</ul>
-					</header>
-				</article>
+		<!--##########################################-->
+		<!--ADDRESS WIDGET-->
+		<!--##########################################-->
 
-				<div style="height:20px;"></div>
+		<article class="container">
+			<header style="border-bottom:none;"> 
+				<ul class="widget-list">
+					<li class="widget-container">
+						<img class="thumb-map-icon" src="/images/logo.png" ></img>
+						<div class="content-map-text">
+							<div class="name"><strong>11755 West Pico Blvd.</strong><br>Los Angeles, CA 90064</div>		            
+						</div>
+					</li>
+				</ul>
+			</header>
+		</article>
+		<article class="container">
+			<header> 
+				<ul class="widget-list">
+					<li class="widget-container">		
+						<span class="map">
+							<img src="/images/map.png"></img>
+						</span>
+					</li>
+				</ul>
+			</header>
+		</article>
 
-				<!--##########################################-->
-				<!--CALL WIDGET-->
-				<!--##########################################-->
+		<div style="height:20px;"></div>
 
-				<div style="padding-right:25px;">
-					<a style='border-radius:2px;text-decoration:none;' id='book_button'><div style="display:inline;margin-top:10px;padding: 15px 10px 0 0;"><img style="vertical-align:middle;padding-bottom:5px;" src='/images/call.png'></img></div><div style="display:inline;margin-top:100px;">Call Us</div></a>
-				</div>
+		<!--##########################################-->
+		<!--CALL WIDGET-->
+		<!--##########################################-->
 
-				<div style="height:20px;"></div>
+		<div style="padding-right:25px;">
+			<a style='border-radius:2px;text-decoration:none;' id='book_button'><div style="display:inline;margin-top:10px;padding: 15px 10px 0 0;"><img style="vertical-align:middle;padding-bottom:5px;" src='/images/call.png'></img></div><div style="display:inline;margin-top:100px;">Call Us</div></a>
+		</div>
 
-				<!--##########################################-->
-				<!--HOURS WIDGET-->
-				<!--##########################################-->
+		<div style="height:20px;"></div>
 
-				<article class="container">
-					<header> 
-						<ul class="widget-list">
-							<li class="widget-container">
-								<div class="hours">
-									<span class="name">Hours&nbsp;&nbsp;<strong>10:30 am - 11:00 pm</strong></span>
-									<span><img src="/images/arrow.png" style="float:right;vertical-align:middle;;" width="30"></img></span>         
-								</div>
-							</li>
-						</ul>
-					</header>
-				</article>
+		<!--##########################################-->
+		<!--HOURS WIDGET-->
+		<!--##########################################-->
 
-			</div>         
-		</div><!-- main -->
-		<div id="img-preload" style="display: none;"></div>
+		<article class="container">
+			<header> 
+				<ul class="widget-list">
+					<li class="widget-container">
+						<div class="hours">
+							<span class="name">Hours&nbsp;&nbsp;<strong>10:30 am - 11:00 pm</strong></span>
+							<span><img src="/images/arrow.png" style="float:right;vertical-align:middle;;" width="30"></img></span>         
+						</div>
+					</li>
+				</ul>
+			</header>
+		</article>       
+
 	</div><!-- #content -->
 
 	<div id="mq_desktop"></div>
@@ -207,7 +202,7 @@ var _gaq = _gaq || [];
 			//$("#main2").html('#{escape_javascript(render :partial => "about")}');
 			$.pageslide.close();
 			var content = "<%= escape_javascript(render(:partial => 'reviews')) %>";
-			$("#main2").html(content);
+			$("#content").html(content);
 		})
 	})
 	</script>
@@ -251,7 +246,6 @@ var _gaq = _gaq || [];
 	$(function(){
 		$("#loadgallery").click(function(){
 			$.pageslide.close();
-			$("#galleryd").html('<center><img src="images/spinner.gif" /></center>');
 		})
 	})
 	$(".popout").pageslide({ direction: "right"});
