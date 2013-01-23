@@ -1,27 +1,28 @@
 body {
-background-color:#F4F0ED;
-font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;	
+	background-color:#F4F0ED;
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;	
 }
 
 /************************ BASE WIDGET CONTAINER PROPERTIES (Used by several widgets) *************************/
 
 .container {
-background-color:#F4F0ED;
+	background-color:#F4F0ED;
 }
 .container header,
 .container footer {
-
 }
 .container header {
  	font-size: 15px;
-font-weight:bold;
-color:#851F27;
+	font-weight:bold;
+	color:#851F27;
  	border: 1px solid #E4C69E;
- 	border-radius: 2px;
-padding: 10px;
-margin-left:10px;
-margin-right:10px;
-background-color:white;
+ 	border-radius:2px;
+	padding: 10px;
+	margin-left:10px;
+	margin-right:10px;
+	background-color:white;
+	min-width:200px;
+	padding:10px 10px 0 10px
 }
 .container header div.label {
  	padding-bottom:20px;
@@ -106,43 +107,43 @@ li.selected {
 /************************ TEXT WITH IMAGE WIDGET *************************/
 
 li.widget-container {
-border:none;
+	border:none;
  	margin: 0;
-padding:0;
+	padding:0;
  	position: relative;
-background-color:white; 
+	background-color:white; 
 }
 li .thumb {
-position: absolute;
+	position: absolute;
  	top: 0;
  	left: 0;
- 	height:140px;	
- 	width:140px;
+ 	height:100px;	
+ 	width:100px;
 }
 li .content-text {
- margin-left: 150px;
+ 	margin-left: 110px;
 }
 li hgroup {
- margin-bottom: 10px;
+ 	margin-bottom: 10px;
 }
 li .content-text .name {
-font-size: 20px;
-font-weight:normal;
-color:#000000;
-padding-top:20px;
-line-height:30px;
+	font-size: 16px;
+	font-weight:normal;
+	color:#000000;
+	padding-top:20px;
+	line-height:25px;
 }
 li .content-text-left-aligned {
  	margin-left: 0px;
-margin-top:70px;
+	margin-top:40px;
 }
 li .content-text-left-aligned p {
-padding: 0;
+	padding: 0;
  	margin: 0;
-font-size: 20px;
-font-weight:normal;
-color:#000000;
-line-height:30px;
+	font-size: 16px;
+	font-weight:normal;
+	color:#000000;
+	line-height:20px;
 }
 
 /************************ ADDRESS WIDGET *************************/
