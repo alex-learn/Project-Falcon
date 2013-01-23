@@ -27,6 +27,17 @@ var THEME_URL = '';
 var _gaq = _gaq || [];
 </script>
 
+	
+	<script type="text/javascript">	
+	function absoluteOffset(elem) {
+	    return elem.offsetParent && elem.offsetTop + absoluteOffset(elem.offsetParent);
+	}
+	
+	function scrollToElement(elem) {
+	    window.scroll(0,absoluteOffset(elem));
+	}
+	</script>
+	
 <style type="text/css">
 #pageslide {
 	/* These styles MUST be included. Do not change. */
@@ -38,27 +49,41 @@ var _gaq = _gaq || [];
 	z-index: 999;
 
 	/* Specify the width of your pageslide here */
-	padding: 20px 150px 0 20px;
+	padding-top: 50px;
+	width: 220px;
 
 	/* These styles are optional, and describe how the pageslide will look */
 	background-color: #333;
 	background: #424242;
 	border-right: 1px solid #ddd;
 }
+
 #header {left:auto;}
+
+#slide-menu { height: 40px; line-height: 50px; font-weight: 400; width: 100%; position: relative; z-index: 100; padding: none; }
+.slide-menu-tab li {border-bottom: 1px solid #333; border-top: 1px solid #777; border-left: 0px; border-right: 0px; }
+.slide-menu-tab li a { font-size:100%; color: #fff; font-weight: bold; letter-spacing: 2px; padding-left: 10px; }
+
+#pf-site-menu { float: left; padding-top: 5px; }
+#pf-site-menu li { text-transform: uppercase; padding: 0 0.625em; position: relative; top: 6px; left: -10px}
+#pf-site-menu li a { padding: 0; }
+#pf-site-menu li a.active { border-top: 2px solid #fff; font-weight: bold; line-height: 36px; }
+#pf-site-menu li:hover #academy-menu { display: block; }
+
 </style>
 
+<%= stylesheet_link_tag "widgets" %>
 <body>
-	<div id="header" style="line-height: 39px;">
+	<div id="header" style="line-height: 0px;">
 		<div id="slide_popup" style="display:none;">
 			<div id="slide-menu">
-				<ul class="slide-menu-tab">
+				<ul class="slide-menu-tab" style="background-color: #424242;">
 					<li><a href="/merchant">Home</a></li>
 					<li><a href="javascript: load_content()" id="merchant_about">About</a></li>
-					<li><a href="javascript: load_content()" id="contact">Contact</a></li>
-					<li><a herf="javascript: load_content()" id="location">Location</a></li>
-					<li><a href="javascript: load_content()" id="gallery">Gallery</a></li>
-					<li><a href="javascript: load_content()" id="specials">Specials</a></li>
+					<li><a href="javascript: load_content()" id="merchant_contact">Contact</a></li>
+					<li><a herf="javascript: load_content()" id="merchant_location">Location</a></li>
+					<li><a href="javascript: load_content()" id="merchant_gallery">Gallery</a></li>
+					<li><a href="javascript: load_content()" id="merchant_specials">Specials</a></li>
 					<li><a href="javascript: load_content()" id="merchant_reviews">Reviews</a></li>													
 				</ul>
 			</div>
@@ -66,12 +91,12 @@ var _gaq = _gaq || [];
 		<div class="wrapper clearfix" style="background-color: #851F27;">
 			<div id="slide_popup"><a href="#slide_popup" class="popout"></a></div>
 
-			<ul id="pf-site-menu">
-				<li><a href="#slide_popup" class="popout"><img src="images/icon-navmenu.png"></a></li>
+			<ul id="pf-site-menu" style="background-color: #851F27;">
+				<a href="#slide_popup" class="popout"><img src="images/icon-navmenu.png"></a>
 			</ul>
 
 			<div id="toggle-buttons">
-				<div id="toggle-blog-menu" style="border-left: 1px solid #fff; width: 95px; line-height: 50px;">menu<i class="icon-arrowdown" style="padding-left:10px"></i></div>
+				<div id="toggle-blog-menu" style="border-left: 1px solid #fff; width: 95px; line-height: 50px;">menu<i class="icon-arrowdown" style="padding-left: 10px"></i></div>
 				<div id="toggle-search" style="border-left: 1px solid #fff; width: 50px; line-height: 50px;"><i class="icon-search"></i></div>
 			</div>
 
@@ -196,6 +221,7 @@ var _gaq = _gaq || [];
 	<div id="mq_phone"></div>
 
 	<script type="text/javascript">
+	
 	$(function(load_content) {
 		$("#merchant_reviews").click(function() {
 			//alert('About us page');

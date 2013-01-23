@@ -1,247 +1,316 @@
+body {
+background-color:#F4F0ED;
+font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;	
+}
+
+/************************ BASE WIDGET CONTAINER PROPERTIES (Used by several widgets) *************************/
+
 .container {
+background-color:#F4F0ED;
 }
 .container header,
 .container footer {
-	padding: 20px;
+
 }
 .container header {
-  	font-size: 30px;
-	font-weight:bold;
-	color:#851F27;
-  	border: 2px solid #E4C69E;
-  	border-radius: 2px;
-	background-color:white;
+ 	font-size: 15px;
+font-weight:bold;
+color:#851F27;
+ 	border: 1px solid #E4C69E;
+ 	border-radius: 2px;
+padding: 10px;
+margin-left:10px;
+margin-right:10px;
+background-color:white;
 }
 .container header div.label {
-  	padding-bottom:20px;
+ 	padding-bottom:20px;
 }
-
-/*
 ul {
-  	background-color:#FDF6ED;	
-  	list-style: none;
-  	margin: 0;
-  	padding: 0px;
+ 	background-color:#FDF6ED;	
+ 	list-style: none;
+ 	margin: 0;
+ 	padding: 0px;
 }
-*/
 
+/************************ REVIEWS WIDGET *************************/
+
+li {
+ 	border: 2px solid #CFCECE;
+ 	border-bottom:none;	
+ 	margin: 0;
+ 	position: relative;
+ 	padding: 10px;
+}
+li:first-child {
+}
+li:last-child {
+border-bottom: 2px solid #CFCECE;
+}
+li .profile-thumb {
+position: absolute;
+ 	top: 10px;
+ 	left: 10px;
+ 	height:130px;	
+ 	width:130px;
+}
+li .content {
+ margin-left: 140px;
+}
+li hgroup {
+ margin-bottom: 10px;
+}
+li .content .name {
+display: inline;
+font-size: 20px;
+font-weight:bold;
+color:#000000;
+padding-right:5px;
+}
+li .content p {
+padding: 0;
+ 	margin: 0;
+font-size: 20px;
+font-weight:normal;
+color:#000000;
+}
+li .stars img {
+ 	vertical-align: bottom;
+margin-bottom:5px;
+padding-right:5px;
+}
+li .date {
+ 	font-size: 18px;
+font-weight:lighter;
+color:#000000;
+}
+li.selected {
+ background-color: yellow;
+}
+.widget-button {
+}
+.widget-button > div {
+ display: table;
+}
+.widget-button h2,
+.widget-button .arrow-right {
+ display: table-cell;
+}
+.widget-button h2 {
+ width: 100%;
+}
+.widget-button.selected {
+ background-color: red;
+}
 
 /************************ TEXT WITH IMAGE WIDGET *************************/
 
 li.widget-container {
-	border:none;
-  	margin: 0;
-	padding:0;
-  	position: relative;
-	background-color:white; 	
+border:none;
+ 	margin: 0;
+padding:0;
+ 	position: relative;
+background-color:white; 
 }
 li .thumb {
-	position: absolute;
-  	top: 0;
-  	left: 0;
-  	height:90px;	
-  	width:80px;
+position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	height:140px;	
+ 	width:140px;
 }
 li .content-text {
-  margin-left: 100px;
+ margin-left: 150px;
 }
 li hgroup {
-  margin-bottom: 0px;
+ margin-bottom: 10px;
 }
 li .content-text .name {
- 	font-size: 12px;
-	font-weight:normal;
-	color:#000000;
-	padding-top:20px;
+font-size: 20px;
+font-weight:normal;
+color:#000000;
+padding-top:20px;
+line-height:30px;
 }
 li .content-text-left-aligned {
-  	margin-left: 0px;
-	margin-top:55px;
+ 	margin-left: 0px;
+margin-top:70px;
 }
 li .content-text-left-aligned p {
- 	padding: 0;
-  	margin: 0;
-	font-size: 12px;
-	font-weight:normal;
-	color:#000000;
+padding: 0;
+ 	margin: 0;
+font-size: 20px;
+font-weight:normal;
+color:#000000;
+line-height:30px;
 }
 
 /************************ ADDRESS WIDGET *************************/
 
 li .thumb-map-icon {
-	position: absolute;
-  	top: 0;
-  	left: 0;
-  	height:60px;	
-  	width:50px;
+position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	height:80px;	
+ 	width:80px;
 }
 li .content-map-text {
-  margin-left: 60px;
+ margin-left: 90px;
 }
 li hgroup {
-  margin-bottom: 0px;
+ margin-bottom: 10px;
 }
 li .content-map-text .name {
- 	font-size: 15px;
-	font-weight:normal;
-	color:#000000;
-	padding-top:5px;
+font-size: 28px;
+font-weight:normal;
+color:#000000;
+padding-top:5px;
 }
 li .content-map-text-left-aligned {
-  	margin-left: 0px;
-	margin-top:70px;
+ 	margin-left: 0px;
+margin-top:70px;
 }
 li .content-map-text-left-aligned p {
- 	padding: 0;
-  	margin: 0;
-	font-size: 28px;
-	font-weight:normal;
-	color:#000000;
+padding: 0;
+ 	margin: 0;
+font-size: 28px;
+font-weight:normal;
+color:#000000;
 }
 li .map img {
-  	top: 0;
-  	left: 0;
-  	width:100%;
+ 	top: 0;
+ 	left: 0;
+ 	width:100%;
 }
 
 /************************ CALL BUTTON *************************/
 
 #book_button {
-	background-color: #7FBF4D;
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7FBF4D), color-stop(100%, #63A62F));
-	background-image: -webkit-linear-gradient(top, #7FBF4D, #63A62F);
-	background-image: -moz-linear-gradient(top, #7FBF4D, #63A62F);
-	background-image: -ms-linear-gradient(top, #7FBF4D, #63A62F);
-	background-image: -o-linear-gradient(top, #7FBF4D, #63A62F);
-	background-image: linear-gradient(top, #7FBF4D, #63A62F);
-	border: 1px solid #63A62F;
-	border-bottom: 1px solid #5B992B;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	-ms-border-radius: 3px;
-	-o-border-radius: 3px;
-	border-radius: 3px;
-	-webkit-box-shadow: inset 0 1px 0 0 #96ca6d;
-	-moz-box-shadow: inset 0 1px 0 0 #96ca6d;
-	box-shadow: inset 0 1px 0 0 #96ca6d;
-	color: white;
-	width:100%;
-	font-size:  20px ;
-	font-weight:bold;
-	line-height: 1.5;
-	padding: 12px;
-	padding-bottom:13px;
-	text-align: center;
-	text-shadow: 0 -1px 0 #4C9021;
-	display:inline-block;
-	color:white !important;
+background-color: #7FBF4D;
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7FBF4D), color-stop(100%, #63A62F));
+background-image: -webkit-linear-gradient(top, #7FBF4D, #63A62F);
+background-image: -moz-linear-gradient(top, #7FBF4D, #63A62F);
+background-image: -ms-linear-gradient(top, #7FBF4D, #63A62F);
+background-image: -o-linear-gradient(top, #7FBF4D, #63A62F);
+background-image: linear-gradient(top, #7FBF4D, #63A62F);
+border: 1px solid #63A62F;
+border-bottom: 1px solid #5B992B;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+-ms-border-radius: 3px;
+-o-border-radius: 3px;
+border-radius: 3px;
+-webkit-box-shadow: inset 0 1px 0 0 #96ca6d;
+-moz-box-shadow: inset 0 1px 0 0 #96ca6d;
+box-shadow: inset 0 1px 0 0 #96ca6d;
+color: white;
+width:100%;
+font-size:  30px ;
+font-weight:bold;
+line-height: 1.5;
+padding: 12px;
+padding-bottom:13px;
+text-align: center;
+text-shadow: 0 -1px 0 #4C9021;
+display:inline-block;
+color:white !important;
 }
 #book_button:hover {
-    background-color: #76b347;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #76b347), color-stop(100%, #5e9e2e));
-    background-image: -webkit-linear-gradient(top, #76b347, #5e9e2e);
-    background-image: -moz-linear-gradient(top, #76b347, #5e9e2e);
-    background-image: -ms-linear-gradient(top, #76b347, #5e9e2e);
-    background-image: -o-linear-gradient(top, #76b347, #5e9e2e);
-    background-image: linear-gradient(top, #76b347, #5e9e2e);
-    -webkit-box-shadow: inset 0 1px 0 0 #8dbf67;
-    -moz-box-shadow: inset 0 1px 0 0 #8dbf67;
-    box-shadow: inset 0 1px 0 0 #8dbf67;
-    cursor: pointer; }
- #book_button:active {
-    border: 1px solid #5b992b;
-    border-bottom: 1px solid #538c27;
-    -webkit-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
-    -moz-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
-    box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee; }
+   background-color: #76b347;
+   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #76b347), color-stop(100%, #5e9e2e));
+   background-image: -webkit-linear-gradient(top, #76b347, #5e9e2e);
+   background-image: -moz-linear-gradient(top, #76b347, #5e9e2e);
+   background-image: -ms-linear-gradient(top, #76b347, #5e9e2e);
+   background-image: -o-linear-gradient(top, #76b347, #5e9e2e);
+   background-image: linear-gradient(top, #76b347, #5e9e2e);
+   -webkit-box-shadow: inset 0 1px 0 0 #8dbf67;
+   -moz-box-shadow: inset 0 1px 0 0 #8dbf67;
+   box-shadow: inset 0 1px 0 0 #8dbf67;
+   cursor: pointer; }
+#book_button:active {
+   border: 1px solid #5b992b;
+   border-bottom: 1px solid #538c27;
+   -webkit-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
+   -moz-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
+   box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee; }
 
 /************************ HOURS WIDGET *************************/
 
 li .hours {
-	text-align:center;
+text-align:center;
 }
 li .hours .name {
- 	font-size: 25px;
-	font-weight:normal;
-	color:#000000;
-	padding-top:0px;
+font-size: 28px;
+font-weight:normal;
+color:#000000;
+padding-top:5px;
 }
 
+/************************ MENU WIDGET *************************/
 
-/************************ REVIEWS WIDGET *************************/
-
-li {
-	/*
-  	border: 2px solid #CFCECE;
-*/
-  	border-bottom:none;	
-  	margin: 0;
-  	position: relative;
-  	padding: 10px;
+li .menu {
+ margin-left: 0;
+ min-height:150px;	
 }
-
-li:first-child {
+li .menu .name {
+display: inline;
+font-size: 28px;
+font-weight:bold;
+color:#000000;
+padding-right:5px;
 }
-/*
-li:last-child {
-	border-bottom: 2px solid #CFCECE;
+li .menu p {
+padding: 0 140px 0 0;
+ 	margin: 0;
+font-size: 28px;
+font-weight:normal;
+color:#000000;
 }
-*/
-li .profile-thumb {
-	position: absolute;
-  	top: 10px;
-  	left: 10px;
-  	height:70px;	
-  	width:70px;
+li .menu-thumb {
+position:absolute;
+top:10px;
+right:-10px;
+height:130px;	
+ 	width:130px;
+z-index:0
 }
-
-li .content {
-  margin-left: 100px;
+.image .text {
+float:right;
+   top:0px; /* in conjunction with left property, decides the text position */
+   left:0px;
+   width:130px; /* optional, though better have one */
+float:right;
+border:1px dotted;
+text-align:right;
+z-index:-1;
 }
-
-li hgroup {
-  margin-bottom: 10px;
+.triangle-topright { 
+position:absolute;
+width: 0; 
+height: 0; 
+border-top: 18px solid #851F27; 
+border-left: 18px solid transparent; 
+z-index:3;
+top:0;
+right:65;
+}	
+.triangle-bottomright { 
+position:absolute;
+width: 0; 
+height: 0; 
+border-bottom: 18px solid #851F27; 
+border-left: 18px solid transparent; 
+z-index:3;
+top:20px;
+right:65;
 }
-li .content .name {
-	display: inline;
- 	font-size: 15px;
-	font-weight:bold;
-	color:#000000;
-	padding-right:5px;
-}
-li .content p {
- 	padding: 0;
-  	margin: 0;
-	font-size: 10px;
-	font-weight:normal;
-	color:#000000;
-}
-li .stars img {
-  	vertical-align: bottom;
-	margin-bottom:5px;
-	padding-right:5px;
-}
-li .date {
-  	font-size: 10px;
-	font-weight:lighter;
-	color:#000000;
-}
-li.selected {
-  background-color: yellow;
-}
-
-.widget-button {
-}
-.widget-button > div {
-  display: table;
-}
-.widget-button h2,
-.widget-button .arrow-right {
-  display: table-cell;
-}
-.widget-button h2 {
-  width: 100%;
-}
-.widget-button.selected {
-  background-color: red;
+.triangle-bottomleft { 
+position:absolute;
+width: 0; 
+height: 0; 
+border-bottom: 5px solid #331014; 
+border-right: 5px solid transparent; 
+z-index:4;
+top:-5px;
+right:0;
 }

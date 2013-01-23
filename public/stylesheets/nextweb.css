@@ -15,7 +15,7 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
 table { border-collapse: collapse; border-spacing: 0; }
 fieldset, img { border: 0; }
 address,caption,cite,code,dfn,th,var { font-style: normal; font-weight: normal; }
-ul { list-style: none; }
+
 caption, th { text-align: left; }
 q:before,q:after { content: ''; }
 abbr,acronym { border: 0; }
@@ -182,21 +182,13 @@ input[type=text],input[type=password], textarea { padding: 5px; border: 1px soli
 #header a { color: #fff; display: block; padding: 0 0.750em; }
 #header a:hover { color: #fff; }
 
-#slide-menu { height: 40px; line-height: 50px; font-weight: 400; width: 100%; position: relative; z-index: 100; }
-.slide-menu-tab li a { font-size:100%; color: #fff; font-weight: bold; }
-
 #site-title { width: 330px; float: left; text-transform: uppercase; font-size: 1.250em; letter-spacing: 1px; display: none; }
 #toggle-stream { background: #ef4423; float: left; width: 50px; height: 50px; overflow: hidden; color: #fff; text-align: center; display: none; }
 #toggle-buttons { display: none; float: right; }
 #toggle-buttons div { width: 50px; height: 50px; display: inline-block; text-align: center; border-left: 1px solid #fff; float: left; display: block; color: #fff; }
 #toggle-search { padding: 0; color: #fff; }
 #toggle-blog-menu .icon-arrowdown { font-size: 100%; margin: 0; position: relative; top: -2px; }
-#pf-site-menu { float: left; padding-left: 1em; }
-#pf-site-menu li { text-transform: uppercase; padding: 0 0.625em; position: relative; top: 6px; left: -10px}
-#pf-site-menu li a { padding: 0; }
-#pf-site-menu li a.active { border-top: 2px solid #fff; font-weight: bold; line-height: 36px; }
 
-#pf-site-menu li:hover #academy-menu { display: block; }
 #academy-menu { position: absolute; background: #EF4423; left: 0; padding-right: 1.25em; display: none; }
 #academy-menu li { float: none; }
 
@@ -221,8 +213,6 @@ input[type=text],input[type=password], textarea { padding: 5px; border: 1px soli
 #follow-us-popup table td { border: none; position: relative; padding: 3px 0; border-bottom: 1px solid #dedede; width: 50%; }
 #follow-us-popup table tr:last-child td { border-bottom: 0; }
 
-
-.tnw-logo { background-position: 0 9px; width: 70px; height: 40px; float: left; }
 
 #search-form { float: right; height: 40px; width: 50px; background: #ef4423; color: #fff; overflow: hidden; border-left: 1px solid #fff; }
 #search-form .search-button { display: block; width: 50px; overflow: hidden; cursor: pointer; float: left; text-align: center; font-size: 0.875em; }
@@ -879,7 +869,7 @@ a [class^="icon-"], a [class*=" icon-"] { display: inline-block; text-decoration
 	.article-grabber { font-size: 3em; }
 	#toggle-stream { display: block; }
 	#site-title { width: auto; }
-	#pf-site-menu { display: block; }
+	#pf-site-menu { display: block; padding-top: 8px; }
 	.follow-us { display: none; }
 	.article-more .loop-post { width: 100%; float: none; }
 	.article-more .loop-post .loop-post-image img { width: 30%; margin-right: 1.250em; }
