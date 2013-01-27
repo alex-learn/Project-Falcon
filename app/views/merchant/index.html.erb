@@ -63,16 +63,26 @@ var _gaq = _gaq || [];
 #slide-menu { height: 40px; line-height: 50px; font-weight: 400; width: 100%; position: relative; z-index: 100; padding: none; }
 .slide-menu-tab li {border-bottom: 1px solid #333; border-top: 1px solid #777; border-left: 0px; border-right: 0px; }
 .slide-menu-tab li a { font-size:100%; color: #fff; font-weight: bold; letter-spacing: 2px; padding-left: 10px; }
-
 #pf-site-menu { float: left; padding-top: 5px; }
 #pf-site-menu li { text-transform: uppercase; padding: 0 0.625em; position: relative; top: 6px; left: -10px}
 #pf-site-menu li a { padding: 0; }
 #pf-site-menu li a.active { border-top: 2px solid #fff; font-weight: bold; line-height: 36px; }
 #pf-site-menu li:hover #academy-menu { display: block; }
 
+/* Search form properties */
+#search-form { display: none; float: none; width: 100%; background: #ef4423; padding: 0.5em 0.5em; border-bottom: 1px solid #fff; border-top: 1px solid #fff; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; height: 50px; }
+#search-form .search-input { width: 100%; height: 30px; line-height: 30px; padding: 0 1em; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; background: #fff; color: #424242; }
+#search-form .search-button { display: none; }
 
+/* Menu items properties */
 .blog-menu { display: none; width: 100%; text-align: right; }
-.blog-menu li { width: 100%; text-align: right; background: #ef4423; border-bottom: 10px solid #fff; }
+.blog-menu li { width: 100%; text-align: right; background: #ef4423; border-bottom: 1px solid #fff; }
+.extra-menu { margin: 0; display: block; }
+#header .extra-menu li { width: 100%; background-color: #851F27; border: 1px solid #cfcece; font-size: 18px;}
+#header .extra-menu { display: block; position: relative; }
+.extra-menu li { width: 100%; text-align: right; background-color: #851F27; border: 1px solid #cfcece; font-size: 18px;}
+#toggle-extra-menu { width: 100%; height: auto; padding: 0px; line-height: 12px; border: none; }
+#toggle-extra-menu .icon-info { display: none; }
 
 </style>
 
@@ -112,21 +122,21 @@ var _gaq = _gaq || [];
 				</form>
 			</div>
 
-			<ul class="blog-menu" style="background-color: #851F27;">
+			<ul class="blog-menu">
 				<li id="toggle-extra-menu"><i class="icon-info"></i>
 					<ul class="extra-menu">
-						<li style="background-color: #851F27;"><a href="/about/">Appetizers</a></li>
-						<li style="background-color: #851F27;"><a href="/contact/">Salads</a></li>
-						<li style="background-color: #851F27;"><a href="/team/">Soups</a></li>
-						<li style="background-color: #851F27;"><a href="/goodies/">Seafood</a></li>
-						<li style="background-color: #851F27;"><a href="/advertise/">Burritos</a></li>
-						<li style="background-color: #851F27;"><a href="/about/">Tostadas</a></li>
-						<li style="background-color: #851F27;"><a href="/team/">A La Carte</a></li>
-						<li style="background-color: #851F27;"><a href="/goodies/">Beverages</a></li>
-						<li style="background-color: #851F27;"><a href="/advertise/">Cocktails</a></li>
-						<li style="background-color: #851F27;"><a href="/about/">Desserts</a></li>
-						<li style="background-color: #851F27;"><a href="/contact/">Combinations</a></li>
-						<li style="background-color: #851F27;"><a href="/contact/">House Specials</a></li>
+						<li><a href="/about/">Appetizers</a></li>
+						<li><a href="/contact/">Salads</a></li>
+						<li><a href="/team/">Soups</a></li>
+						<li><a href="/goodies/">Seafood</a></li>
+						<li><a href="/advertise/">Burritos</a></li>
+						<li><a href="/about/">Tostadas</a></li>
+						<li><a href="/team/">A La Carte</a></li>
+						<li><a href="/goodies/">Beverages</a></li>
+						<li><a href="/advertise/">Cocktails</a></li>
+						<li><a href="/about/">Desserts</a></li>
+						<li><a href="/contact/">Combinations</a></li>
+						<li><a href="/contact/">House Specials</a></li>
 					</ul>
 				</li>
 			</ul>						
