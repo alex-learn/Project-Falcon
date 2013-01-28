@@ -34,8 +34,6 @@ ul {
  	padding: 0px;
 }
 
-/************************ REVIEWS WIDGET *************************/
-
 li {
  	border: 2px solid #CFCECE;
  	border-bottom:none;	
@@ -43,6 +41,19 @@ li {
  	position: relative;
  	padding: 10px;
 }
+
+/************************ DROP DOWN NAVIGATION *************************/
+
+li.drop-down {
+ 	border: none;
+ 	border-bottom:none;	
+ 	margin: 0;
+ 	position: relative;
+ 	padding: 10px;
+}
+
+/************************ REVIEWS WIDGET *************************/
+
 li:first-child {
 }
 li:last-child {

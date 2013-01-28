@@ -78,9 +78,10 @@ var _gaq = _gaq || [];
 .blog-menu { display: none; width: 100%; text-align: right; }
 .blog-menu li { width: 100%; text-align: right; background: #ef4423; border-bottom: 1px solid #fff; }
 .extra-menu { margin: 0; display: block; }
-#header .extra-menu li { width: 100%; background-color: #851F27; border: 1px solid #cfcece; font-size: 18px;}
+#header .extra-menu li { width: 100%; background-color: #851F27;border-left:0;border-bottom: 1px solid #cfcece;font-size: 18px;}
+#header .extra-menu li:first-child { width: 100%; background-color: #851F27;border-left:0;border-top: 1px solid #cfcece;font-size: 18px;}
 #header .extra-menu { display: block; position: relative; }
-.extra-menu li { width: 100%; text-align: right; background-color: #851F27; border: 1px solid #cfcece; font-size: 18px;}
+.extra-menu li { width: 100%; text-align: right; background-color: #851F27; border: 0px solid #cfcece; font-size: 18px;}
 #toggle-extra-menu { width: 100%; height: auto; padding: 0px; line-height: 12px; border: none; }
 #toggle-extra-menu .icon-info { display: none; }
 
@@ -125,18 +126,18 @@ var _gaq = _gaq || [];
 			<ul class="blog-menu">
 				<li id="toggle-extra-menu"><i class="icon-info"></i>
 					<ul class="extra-menu">
-						<li><a href="/about/">Appetizers</a></li>
-						<li><a href="/contact/">Salads</a></li>
-						<li><a href="/team/">Soups</a></li>
-						<li><a href="/goodies/">Seafood</a></li>
-						<li><a href="/advertise/">Burritos</a></li>
-						<li><a href="/about/">Tostadas</a></li>
-						<li><a href="/team/">A La Carte</a></li>
-						<li><a href="/goodies/">Beverages</a></li>
-						<li><a href="/advertise/">Cocktails</a></li>
-						<li><a href="/about/">Desserts</a></li>
-						<li><a href="/contact/">Combinations</a></li>
-						<li><a href="/contact/">House Specials</a></li>
+						<li class="drop-down"><a href="/about/">Appetizers</a></li>
+						<li class="drop-down"><a href="/contact/">Salads</a></li>
+						<li class="drop-down"><a href="/team/">Soups</a></li>
+						<li class="drop-down"><a href="/goodies/">Seafood</a></li>
+						<li class="drop-down"><a href="/advertise/">Burritos</a></li>
+						<li class="drop-down"><a href="/about/">Tostadas</a></li>
+						<li class="drop-down"><a href="/team/">A La Carte</a></li>
+						<li class="drop-down"><a href="/goodies/">Beverages</a></li>
+						<li class="drop-down"><a href="/advertise/">Cocktails</a></li>
+						<li class="drop-down"><a href="/about/">Desserts</a></li>
+						<li class="drop-down"><a href="/contact/">Combinations</a></li>
+						<li class="drop-down"><a href="/contact/">House Specials</a></li>
 					</ul>
 				</li>
 			</ul>						
