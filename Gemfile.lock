@@ -39,7 +39,6 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.19)
-    nokogiri (1.5.5)
     pg (0.14.1)
     polyglot (0.3.3)
     rack (1.2.5)
