@@ -76,7 +76,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  nokogiri
   pg
   rails (= 3.0.5)
   sqlite3
