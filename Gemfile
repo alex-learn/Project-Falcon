@@ -32,6 +32,6 @@ group :production do
 end
 
 group :development, :test do
-  gem 'webrat'
+##  gem 'webrat'
   gem 'sqlite3'
 end
