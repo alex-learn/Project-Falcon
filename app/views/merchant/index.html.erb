@@ -97,12 +97,12 @@ var _gaq = _gaq || [];
 				<ul class="slide-menu-tab" style="background-color: #424242;">
 					<li><a href="#">Don Antonio's'</a></li>
 					<li><a href="/merchant">Home</a></li>
-					<li><a href="javascript: load_content()" id="merchant_about">About</a></li>
-					<li><a href="javascript: load_content()" id="merchant_contact">Contact</a></li>
-					<li><a herf="javascript: load_content()" id="merchant_location">Location</a></li>
-					<li><a href="javascript: load_content()" id="merchant_gallery">Gallery</a></li>
-					<li><a href="javascript: load_content()" id="merchant_specials">Specials</a></li>
-					<li><a href="javascript: load_content()" id="merchant_reviews">Reviews</a></li>																							
+					<li><a href="javascript: load_content()" id="about">About</a></li>
+					<li><a href="javascript: load_content()" id="contact">Contact</a></li>
+					<li><a herf="javascript: load_content()" id="location">Location</a></li>
+					<li><a href="javascript: load_content()" id="gallery">Gallery</a></li>
+					<li><a href="javascript: load_content()" id="specials">Specials</a></li>
+					<li><a href="javascript: load_content()" id="reviews">Reviews</a></li>																							
 				</ul>
 			</div>
 		</div>
@@ -241,17 +241,26 @@ var _gaq = _gaq || [];
 	<div id="mq_phone"></div>
 
 	<script type="text/javascript">
-	
+		
 	$(function(load_content) {
-		$("#merchant_reviews").click(function() {
-			//alert('About us page');
-			//$("#main2").html('#{escape_javascript(render :partial => "about")}');
+		$("#reviews, #specials, #gallery, #location, #contact, #about").click(function() {
+			var page = this.id;
+			//alert (page);
 			$.pageslide.close();
-			var content = "<%= escape_javascript(render(:partial => 'reviews')) %>";
+			if (page == "reviews") {
+				var content = "<%= escape_javascript(render(:partial => 'reviews')) %>";
+			} else if (page == "gallery") {
+				var content = "<%= escape_javascript(render(:partial => 'gallery')) %>";
+			} else if (page == "specials") {
+				var content = "<%= escape_javascript(render(:partial => 'specials')) %>";
+			} else {
+				return;
+			}
 			$("#content").html(content);
 		})
 	})
 	</script>
+	
 
 	<script>
 
