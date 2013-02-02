@@ -28,16 +28,6 @@ var _gaq = _gaq || [];
 </script>
 
 	
-	<script type="text/javascript">	
-	function absoluteOffset(elem) {
-	    return elem.offsetParent && elem.offsetTop + absoluteOffset(elem.offsetParent);
-	}
-	
-	function scrollToElement(elem) {
-	    window.scroll(0,absoluteOffset(elem));
-	}
-	</script>
-	
 <style type="text/css">
 #pageslide {
 	/* These styles MUST be included. Do not change. */
@@ -128,18 +118,18 @@ var _gaq = _gaq || [];
 			<ul class="blog-menu">
 				<li id="toggle-extra-menu"><i class="icon-info"></i>
 					<ul class="extra-menu">
-						<li class="drop-down"><a href="/about/">Appetizers</a></li>
-						<li class="drop-down"><a href="/contact/">Salads</a></li>
-						<li class="drop-down"><a href="/team/">Soups</a></li>
-						<li class="drop-down"><a href="/goodies/">Seafood</a></li>
-						<li class="drop-down"><a href="/advertise/">Burritos</a></li>
-						<li class="drop-down"><a href="/about/">Tostadas</a></li>
-						<li class="drop-down"><a href="/team/">A La Carte</a></li>
-						<li class="drop-down"><a href="/goodies/">Beverages</a></li>
-						<li class="drop-down"><a href="/advertise/">Cocktails</a></li>
-						<li class="drop-down"><a href="/about/">Desserts</a></li>
-						<li class="drop-down"><a href="/contact/">Combinations</a></li>
-						<li class="drop-down"><a href="/contact/">House Specials</a></li>
+						<li class="drop-down"><a href="javascript: load_menu()" id="appetizers">Appetizers</a></li>
+						<li class="drop-down"><a href="javascript: load_menu()" id="salads">Salads</a></li>
+						<li class="drop-down"><a href="javascript: load_menu()" id="soups">Soups</a></li>
+						<li class="drop-down"><a href="javascript: load_menu()" id="seafood">Seafood</a></li>
+						<li class="drop-down"><a href="javascript: load_menu()" id="burritos">Burritos</a></li>
+						<li class="drop-down"><a href="javascript: load_menu()" id="tostadas">Tostadas</a></li>
+						<li class="drop-down"><a href="javascript: load_menu()" id="aLaCarte">A La Carte</a></li>
+						<li class="drop-down"><a href="javascript: load_menu()" id="beverages">Beverages</a></li>
+						<li class="drop-down"><a href="javascript: load_menu()" id="cocktails">Cocktails</a></li>
+						<li class="drop-down"><a href="javascript: load_menu()" id="desserts">Desserts</a></li>
+						<li class="drop-down"><a href="javascript: load_menu()" id="combinations">Combinations</a></li>
+						<li class="drop-down"><a href="javascript: load_menu()" id="specials">House Specials</a></li>
 					</ul>
 				</li>
 			</ul>						
@@ -239,6 +229,7 @@ var _gaq = _gaq || [];
 	<div id="mq_desktop"></div>
 	<div id="mq_tablet"></div>
 	<div id="mq_phone"></div>
+	
 
 	<script type="text/javascript">
 		
@@ -254,12 +245,25 @@ var _gaq = _gaq || [];
 			} else if (page == "specials") {
 				var content = "<%= escape_javascript(render(:partial => 'specials')) %>";
 			} else {
+				$('html, body').animate({scrollTop: 0}, 'slow');
 				return;
 			}
 			$("#content").html(content);
 		})
 	})
+	
+	$(function(load_menu) {
+		$("#appetizers, #specials, #combinations, #desserts, #cocktails, #beverages, #aLaCarte, #tostadas, #burritos, #seafood, #soups, #salads").click(function() {
+			var page = this.id;
+			//alert (page);
+			$(".blog-menu").slideUp();
+			//Add the partial for menu items
+			var content = "<%= escape_javascript(render(:partial => 'menu_items')) %>";
+			$("#content").html(content);
+		})
+	})
 	</script>
+	
 	
 
 	<script>
