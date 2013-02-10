@@ -3,31 +3,6 @@
 <meta http-equiv="content-language" content="en_US">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-<!-- Moving JS files locally to application.html.erb -->
-<script type="text/javascript">
-var SITE_URL = '';
-var THEME_URL = '';
-</script>
-
-
-<link rel="stylesheet" href="http://thenextweb.com/wp-content/themes/icetea/assets/stylesheets/styles.css" type="text/css" />
-<!--[if lt IE 9]>
-<link rel="stylesheet" href="http://thenextweb.com/wp-content/themes/icetea/assets/stylesheets/ie.css?1355331683" type="text/css" />
-<![endif]-->
-<!--[if lte IE 9]>
-<style>.loop-post { width: 47%; float: left; margin-right: 3%; }</style>
-<![endif]-->
-
-<!-- ### MOVING JS FILES TO LOCAL DIR -->
-<script src="http://thenextweb.com/wp-content/themes/icetea/assets/js/libraries.js?1355331683" type="text/javascript"></script>
-<script src="http://thenextweb.com/wp-content/themes/icetea/assets/js/tnw.js?1355331683" type="text/javascript"></script>
-
-
-<script type="text/javascript">
-var _gaq = _gaq || [];
-</script>
-
-	
 <style type="text/css">
 #pageslide {
 	/* These styles MUST be included. Do not change. */
@@ -78,29 +53,14 @@ var _gaq = _gaq || [];
 
 </style>
 
-<script>
-	$(document).ready(function(){
-
-		$(".slideshow").slideshow({
-			autoplay : true,
-			delay : 3000,
-			speed : 100,
-			drag : true,
-			autoResize : true,
-			ratio : 1.6
-		});
-	});
-</script>
-
-<%= javascript_include_tag "jquery.slideshow.js" %>
-<%= stylesheet_link_tag "widgets","gallery" %>
+<%= stylesheet_link_tag "widgets" %>
 
 <body>
 	<div id="header" style="line-height: 0px;">
 		<div id="slide_popup" style="display:none;">
 			<div id="slide-menu">
 				<ul class="slide-menu-tab" style="background-color: #424242;">
-					<li><a href="#">Don Antonio's'</a></li>
+					<li><a href="#">Don Antonio's</a></li>
 					<li><a href="/merchant">Home</a></li>
 					<li><a href="javascript: load_content()" id="about">About</a></li>
 					<li><a href="javascript: load_content()" id="contact">Contact</a></li>
@@ -158,17 +118,17 @@ var _gaq = _gaq || [];
 		<!--IMAGE GALLERY WIDGET-->
 		<!--##########################################-->
 		
-		<div style="height:60px;background-color:#F4F0ED"></div>
+		<div style="height:10px;background-color:#F4F0ED"></div>
 		
 		<article class='container' >
     		<header>
     			<div class='slideshow' >
 					<div class='slideshow-inner' >
 						<div class='slideshow-images' >
-							<img src='images/1.jpg' width='1024' height='768' />
-							<img src='images/2.jpg' width='1024' height='768' />
-							<img src='images/3.jpg' width='1152' height='864' />
-							<img src='images/4.jpg' width='1024' height='819' />
+							<img src='/images/1.jpg' width='1024' height='768' />
+							<img src='/images/2.jpg' width='1024' height='768' />
+							<img src='/images/3.jpg' width='1152' height='864' />
+							<img src='/images/4.jpg' width='1024' height='819' />
 						</div>
 						<div class='slideshow-content' >
 							<div class='slideshow-bg-color' ></div>
@@ -180,90 +140,6 @@ var _gaq = _gaq || [];
 			</header>
     	</article>
 
-		<!--##########################################-->
-		<!--ABOUT US WIDGET-->
-		<!--##########################################-->
-		
-		<div style="height:10px;background-color:#F4F0ED"></div>
-		
-		<article class="container">
-			<header> 
-				<ul class="widget-list">
-					<li class="widget-container">
-						<img class="thumb" src="/images/logo.png" ></img>
-						<div class="content-text">
-							<div class="name"><strong>Don Antonio's</strong><br>Serving since 1982</div>		            
-						</div>
-						<div class="content-text-left-aligned">
-							<hgroup>
-								<p>Welcome friends to the best Mexican food in Los Angeles. You may have a hard time finding the hostess stand, but you can't miss the vibrant atmosphere, good times and great food.</p>
-								<div style="height:20px;"></div>
-								<p>Family owned and operated, Don Antonio's has been serving up authentic Mexican cuisine since 1982.</p>
-							</hgroup>  
-						</div>
-					</li>
-				</ul>
-			</header>
-		</article>
-
-		<div style="height:10px;background-color:#F4F0ED"></div>
-
-		<!--##########################################-->
-		<!--ADDRESS WIDGET-->
-		<!--##########################################-->
-
-		<article class="container">
-			<header style="border-bottom:none;"> 
-				<ul class="widget-list">
-					<li class="widget-container">
-						<img class="thumb-map-icon" src="/images/logo.png" ></img>
-						<div class="content-map-text">
-							<div class="name"><strong>11755 West Pico Blvd.</strong><br>Los Angeles, CA 90064</div>		            
-						</div>
-					</li>
-				</ul>
-			</header>
-		</article>
-		<article class="container">
-			<header> 
-				<ul class="widget-list">
-					<li class="widget-container">		
-						<span class="map">
-							<img src="/images/map.png"></img>
-						</span>
-					</li>
-				</ul>
-			</header>
-		</article>
-
-		<div style="height:20px;"></div>
-
-		<!--##########################################-->
-		<!--CALL WIDGET-->
-		<!--##########################################-->
-
-		<div style="padding-right:25px;">
-			<a style='border-radius:2px;text-decoration:none;' id='book_button'><div style="display:inline;margin-top:10px;padding: 15px 10px 0 0;"><img style="vertical-align:middle;padding-bottom:5px;" src='/images/call.png'></img></div><div style="display:inline;margin-top:100px;">Call Us</div></a>
-		</div>
-
-		<div style="height:20px;"></div>
-
-		<!--##########################################-->
-		<!--HOURS WIDGET-->
-		<!--##########################################-->
-
-		<article class="container">
-			<header> 
-				<ul class="widget-list">
-					<li class="widget-container">
-						<div class="hours">
-							<span class="name">Hours&nbsp;&nbsp;<strong>10:30 am - 11:00 pm</strong></span>
-							<span><img src="/images/arrow.png" style="float:right;vertical-align:middle;;" width="30"></img></span>         
-						</div>
-					</li>
-				</ul>
-			</header>
-		</article>       
 
 	</div><!-- #content -->
 
