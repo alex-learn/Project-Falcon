@@ -25,23 +25,26 @@ body {
 	padding:10px 10px 0 10px
 }
 .container header div.label {
- 	padding-bottom:20px;
+ 	padding-bottom:10px;
 }
 ul {
  	background-color:#FDF6ED;	
  	list-style: none;
  	margin: 0;
- 	padding: 0px;
 }
-
 li {
- 	border: 2px solid #CFCECE;
+ 	border: 1px solid #CFCECE;
  	border-bottom:none;	
  	margin: 0;
  	position: relative;
  	padding: 0px;
 }
-
+li:first-child {
+}
+li:last-child {
+	border-bottom: 1px solid #CFCECE;
+	margin-bottom:10px;
+}
 /************************ DROP DOWN NAVIGATION *************************/
 
 li.drop-down {
@@ -54,11 +57,6 @@ li.drop-down {
 
 /************************ REVIEWS WIDGET *************************/
 
-li:first-child {
-}
-li:last-child {
-	border-bottom: 0px solid #CFCECE;
-}
 li .profile-thumb {
 position: absolute;
  	top: 10px;
@@ -164,10 +162,10 @@ li .thumb-map-icon {
  	top: 0;
  	left: 0;
  	height:50px;	
- 	width:60px;
+ 	width:50px;
 }
 li .content-map-text {
- 	margin-left: 70px;
+ 	margin-left: 60px;
 }
 li hgroup {
  	margin-bottom: 10px;
@@ -257,70 +255,70 @@ li .hours .name {
 /************************ MENU WIDGET *************************/
 
 li .menu {
- margin-left: 0;
- min-height:150px;	
+ 	min-height:90px;	
 }
 li .menu .name {
-display: inline;
-font-size: 28px;
-font-weight:bold;
-color:#000000;
-padding-right:5px;
+	display: inline;
+	font-size: 14px;
+	font-weight:bold;
+	color:#000000;
+	padding:5px 0 0 5px;
 }
 li .menu p {
-padding: 0 140px 0 0;
+	padding: 0 85px 0 5px;
  	margin: 0;
-font-size: 28px;
-font-weight:normal;
-color:#000000;
+	font-size: 14px;
+	font-weight:normal;
+	color:#000000;
+	line-height:15px;
 }
 li .menu-thumb {
-position:absolute;
-top:10px;
-right:-10px;
-height:130px;	
- 	width:130px;
-z-index:0
+	position:absolute;
+	top:10px;
+	right:0;
+	height:70px;	
+ 	width:70px;
+	z-index:0
 }
 .image .text {
-float:right;
-   top:0px; /* in conjunction with left property, decides the text position */
-   left:0px;
-   width:130px; /* optional, though better have one */
-float:right;
-border:1px dotted;
-text-align:right;
-z-index:-1;
+	float:right;
+	top:0px; 	 		/* in conjunction with left property, decides the text position */
+	left:0px;
+	width:130px; 		/* optional, though better have one */
+	float:right;
+	border:1px dotted;
+	text-align:right;
+	z-index:-1;
 }
 .triangle-topright { 
-position:absolute;
-width: 0; 
-height: 0; 
-border-top: 18px solid #851F27; 
-border-left: 18px solid transparent; 
-z-index:3;
-top:0;
-right:65;
+	position:absolute;
+	width: 0; 
+	height: 0; 
+	border-top: 9px solid #851F27; 
+	border-left: 9px solid transparent; 
+	z-index:3;
+	top:0;
+	right:32px;
 }	
 .triangle-bottomright { 
-position:absolute;
-width: 0; 
-height: 0; 
-border-bottom: 18px solid #851F27; 
-border-left: 18px solid transparent; 
-z-index:3;
-top:20px;
-right:65;
+	position:absolute;
+	width: 0; 
+	height: 0; 
+	border-bottom: 9px solid #851F27; 
+	border-left: 9px solid transparent; 
+	z-index:3;
+	top:10px;
+	right:32px;
 }
 .triangle-bottomleft { 
-position:absolute;
-width: 0; 
-height: 0; 
-border-bottom: 5px solid #331014; 
-border-right: 5px solid transparent; 
-z-index:4;
-top:-5px;
-right:0;
+	position:absolute;
+	width: 0; 
+	height: 0; 
+	border-bottom: 2px solid #331014; 
+	border-right: 2px solid transparent; 
+	z-index:4;
+	top:-2px;
+	right:0;
 }
 
 /************************ BUTTON WIDGET *************************/
