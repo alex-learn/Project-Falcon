@@ -25,7 +25,7 @@ body {
 	padding:10px 10px 0 10px
 }
 .container header div.label {
- 	padding-bottom:10px;
+ 	padding-bottom:5px;
 }
 ul {
  	background-color:#FDF6ED;	
@@ -265,7 +265,7 @@ li .menu .name {
 	padding:5px 0 0 5px;
 }
 li .menu p {
-	padding: 0 85px 0 5px;
+	padding: 0 70px 0 5px;
  	margin: 0;
 	font-size: 14px;
 	font-weight:normal;
