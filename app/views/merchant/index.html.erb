@@ -39,7 +39,7 @@ var _gaq = _gaq || [];
 	/* Specify the width of your pageslide here */
 	padding-top: 0px;
 	margin-top:-2px;
-	width: 220px;
+	width: 74%;
 
 	/* These styles are optional, and describe how the pageslide will look */
 	background-color: #333;
@@ -50,8 +50,9 @@ var _gaq = _gaq || [];
 #header {left:auto;}
 
 #slide-menu { height: 40px; line-height: 50px; font-weight: 400; width: 100%; position: relative; z-index: 100; padding: none; }
-.slide-menu-tab li {border-bottom: 1px solid #333; border-top: 1px solid #777; border-left: 0px; border-right: 0px; }
-.slide-menu-tab li a { font-size:100%; color: #fff; font-weight: bold; letter-spacing: 2px; padding-left: 10px; }
+.slide-menu-tab li {border-bottom: 1px solid #333; border-top: 1px solid #555; border-left: 0px; border-right: 0px; }
+.slide-menu-tab li:last-child {border-bottom: 1px solid #333;}
+.slide-menu-tab li a { font-size:100%; color: #fff; font-weight: bold; letter-spacing: 1px; padding-left: 10px; }
 #pf-site-menu { float: left; padding-top: 5px; }
 #pf-site-menu li { text-transform: uppercase; padding: 0 0.625em; position: relative; top: 6px; left: -10px}
 #pf-site-menu li a { padding: 0; }
@@ -98,14 +99,14 @@ var _gaq = _gaq || [];
 		<div id="slide_popup" style="display:none;">
 			<div id="slide-menu">
 				<ul class="slide-menu-tab" style="background-color: #424242;">
-					<li><img src="/images/logo.png" style="position:absolute;top:6px;left:5px;"width="35"></img><a style="padding-left:48px;" href="#">Don Antonio's</a></li>
+					<li><img src="/images/logo.png" style="position:absolute;top:7px;left:5px;"width="35"></img><a style="padding-left:48px;" href="#">Don Antonio's</a></li>
 					<li><img src="/images/about.png" style="display:inline;vertical-align:middle;padding-left:9px;" width="25"></img><a style="display:inline;vertical-align:middle;padding-left:14px;" href="/merchant">Home</a></li>
 					<li><img src="/images/location.png" style="display:inline;vertical-align:middle;padding-left:9px;" width="25"><a href="javascript: load_content()" style="display:inline;vertical-align:middle;padding-left:14px;" id="about">About</a></li>
-					<li><a href="javascript: load_content()" id="contact">Contact</a></li>
-					<li><a herf="javascript: load_content()" id="location">Location</a></li>
-					<li><a href="javascript: load_content()" id="gallery">Gallery</a></li>
-					<li><a href="javascript: load_content()" id="specials">Specials</a></li>
-					<li><a href="javascript: load_content()" id="reviews">Reviews</a></li>																							
+					<li><img src="/images/location.png" style="display:inline;vertical-align:middle;padding-left:9px;" width="25"><a href="javascript: load_content()" id="contact">Contact</a></li>
+					<li><img src="/images/location.png" style="display:inline;vertical-align:middle;padding-left:9px;" width="25"><a herf="javascript: load_content()" id="location">Location</a></li>
+					<li><img src="/images/location.png" style="display:inline;vertical-align:middle;padding-left:9px;" width="25"><a href="javascript: load_content()" id="gallery">Gallery</a></li>
+					<li><img src="/images/location.png" style="display:inline;vertical-align:middle;padding-left:9px;" width="25"><a href="javascript: load_content()" id="specials">Specials</a></li>
+					<li><img src="/images/location.png" style="display:inline;vertical-align:middle;padding-left:9px;" width="25"><a href="javascript: load_content()" id="reviews">Reviews</a></li>																							
 				</ul>
 			</div>
 		</div>
@@ -149,8 +150,10 @@ var _gaq = _gaq || [];
 		</div>
 	</div><!-- #header -->
 
-	<div id="content">
-		<div id="stream" style="display:none;"></div>
+	<div id="content" style="background-color:#F4F0ED;">
+		<div id="stream" style="display:none"></div>
+		
+
 		
 		<!--##########################################-->
 		<!--IMAGE GALLERY WIDGET-->
@@ -199,7 +202,7 @@ var _gaq = _gaq || [];
 		<!--##########################################-->
 
 		<article class="container">
-			<header style="border-bottom:none;"> 
+			<header style="border-bottom:none;margin-bottom:0;"> 
 				<ul class="widget-list">
 					<li class="widget-container">
 						<img class="thumb-map-icon" src="/images/logo.png" ></img>
